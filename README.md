@@ -14,3 +14,10 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->#165
+mm -j && m ramdisk-nodeps && m recoveryimage-nodeps
+
+# To boot into the new recovery image
+# without flashing the recovery partition:
+adb reboot bootloader
+fastboot boot $ANDROenter 
+ID_PRODUCT_OUT/recovery.img
